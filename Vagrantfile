@@ -88,7 +88,6 @@ Vagrant.configure("2") do |config|
 	    sudo yum install nmap -y
 	    sudo systemctl start nginx
 	    sudo systemctl enable nginx
-	    sudo touch /home/vagrant/knock.sh
             echo "DEFROUTE=no" >> /etc/sysconfig/network-scripts/ifcfg-eth0 
             echo "GATEWAY=192.168.0.1" >> /etc/sysconfig/network-scripts/ifcfg-eth1
             sudo reboot
